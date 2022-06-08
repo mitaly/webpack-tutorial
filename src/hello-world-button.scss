@@ -1,0 +1,13 @@
+$background-button: black;
+$button-text-color: white;
+$hello-world-text-font-size: 16px;
+
+.hello-world-button {
+    background-color: $background-button;
+    color: $button-text-color;
+}
+
+.hello-world-text {
+    color: red;
+    font-size: $hello-world-text-font-size;
+}
