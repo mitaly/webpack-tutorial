@@ -55,6 +55,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'styles.css'
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: [
+                "**/*",
+                path.resolve(__dirname, './build/**/*')
+            ]
+        })
     ]
 };
