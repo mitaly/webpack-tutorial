@@ -52,7 +52,7 @@ module.exports = {
             {
                 test: /\.hbs$/,
                 use: [
-                    'handlebar-loaders'
+                    'handlebars-loader'
                 ]
             }
         ]
@@ -70,7 +70,8 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             title: 'Hello world',
-            description: 'Some description'
+            description: 'Some description',
+            template: './index.hbs'
         })
     ]
 };
